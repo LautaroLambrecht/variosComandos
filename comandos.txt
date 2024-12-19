@@ -1,0 +1,25 @@
+touch apartatA.txt
+mkdir LLambrecht
+mv apartatA.txt /LLambrecht
+mkdir uno
+mkdir dos
+mkdir tres
+echo "Lautaro Lambrecht" >> un.txt
+cp procesos.txt LLambrecht/dos/
+awk '/root/' procesos.txt
+awk '{print $2, $9}' procesos.txt
+awk '/vicen/ {print NR, $0}' procesos.txt
+awk '$2 >= 100 && $2 < 1000 {print $1 ":" $2 ":" $11}' procesos.txt
+touch apartatB.txt
+awk '/Moby/ {count++} END {print count}' MobyDick.txt
+grep -o "Moby" MobyDick.txt | wc -l
+grep -w "if" MobyDick.txt | wc -l
+grep -oP "^CHAPTER \d+\..+" MobyDick.txt > capitulos.txt
+awk '/^Moby/ {count++} END {print count}' MobyDick.txt
+awk '/Dick$/ {count++} END {print count}' MobyDick.txt
+touch resum.txt
+sin resolver porq no me sailo
+touch cachalote.txt
+sed -i 's/Whale/CACHALOTE/g' ../../MobyDick.txt > cachalote.txt && cat MobyDick.txt > cachalote.txt
+touch procesos2.txt
+awk '{print $1 ":" $4}' ../../procesos.txt > procesos2.txt
